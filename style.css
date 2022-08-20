@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* Header */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav li a.active {
+    color: #0247FE;
+}
+
+.register {
+    display: flex;
+    gap: 2em;
+}
+
+.register a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #0247FE;
+    border: 1px solid #0247FE;
+    padding: .8em;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.register a.btn {
+    background-color: #0247FE;
+    color: white;
+}
+
+/* Section-one */
+.section-one {
+    padding-top: 1em;
+}
+
+.hero-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc-one h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 57px;
+    color: #1E1E1E;
+}
+
+.desc-one p {
+    width: 70%;
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 2em;
+    color: #444444;
+}
+
+.desc-one a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: .8em;
+    border-radius: 8px;
+    font-weight: 700;
+    background-color: #0247FE;
+    color: white;
+    margin-top: 2em;
+}
+
+.btns {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.apple,
+.android {
+    display: flex;
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    border: 1px solid #0247FE;
+    margin-right: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.android img,
+.apple img {
+    margin-left: 1em;
+}
+
+.android a,
+.apple a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0247FE;
+    background: transparent;
+    text-align: center;
+    margin-left: .5em;
+    margin-bottom: 2em;
+}
+
+.section-two {
+    padding-top: 10em;
+}
+
+.hero-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc-two {
+    width: 50%;
+    margin-right: 5em;
+}
+
+.desc-two h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #1E1E1E;
+}
+
+.desc-two p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #444444;
+    margin-top: 1em;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+}
+
+.option p {
+    margin-bottom: 1em;
+}
+
+.desc-two a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: .8em;
+    border-radius: 8px;
+    background-color: #0247FE;
+    color: white;
+}
+
+/* section three */
+.section-three {
+    padding-top: 5em;
+}
+
+.hero-three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc-three {
+    width: 45%;
+}
+
+.desc-three h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #1E1E1E;
+}
+
+.desc-three ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #444444;
+    list-style: disc;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.desc-three a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: .8em;
+    border-radius: 8px;
+    background-color: #0247FE;
+    color: white;
+}
+
+.desc-three-img {
+    position: relative;
+    z-index: 1;
+}
+
+.desc-three-img::before {
+    content: url(./img/Group\ 71.svg);
+    position: absolute;
+    top: 76%;
+    left: .8%;
+    z-index: -1;
+}
+
+/* section four */
+.section-four {
+    padding-top: 8em;
+}
+
+.hero-four {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc-four {
+    width: 50%;
+}
+
+.desc-four h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #1E1E1E;
+}
+
+.desc-four ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #444444;
+    list-style: disc;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.desc-four a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: .8em;
+    border-radius: 8px;
+    background-color: #0247FE;
+    color: white;
+}
+
+/* section five */
+.section-five {
+    padding-top: 8em;
+}
+
+.hero-five {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc-five {
+    width: 40%;
+}
+
+.desc-five h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    color: #1E1E1E;
+}
+
+.desc-five p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #444444;
+    margin-top: 1em;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.profile {
+    margin-top: 1em;
+}
+
+.profile-name p {
+    font-size: 15px;
+    margin-bottom: .2em;
+}
+
+.profile-name h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+span.stu{
+    font-size: 15px;
+}
+
+/* footer */
+footer{
+    background-color: #0247FE;
+}
+
+.footer-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.one{
+    width: 20%;
+}
+
+.one p{
+    margin: .5em 0;
+}
+
+.socials img{
+  margin-right: 1em;
+}
+
+.two,
+.three,
+.four,
+.five{
+    color: #fff;
+}
+
+.two{
+    margin-top: 2.5em;
+}
+
+.footer-body ul li{
+    list-style: none;
+    margin-top: .8em;
+}
+
+hr{
+    margin-top: 2em;
+}
+
+.footer-bottom{
+    text-align: center;
+    color: #fff;
+    padding: 3em 0;
+}
+
+.footer-bottom a{
+    text-decoration: none;
+    color: #fff;
+}
+
