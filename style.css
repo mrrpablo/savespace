@@ -372,6 +372,7 @@ span.stu{
 /* footer */
 footer{
     background-color: #0247FE;
+    margin-top: 10em;
 }
 
 .footer-body{
@@ -386,6 +387,7 @@ footer{
 
 .one p{
     margin: .5em 0;
+    color: #fff;
 }
 
 .socials img{
